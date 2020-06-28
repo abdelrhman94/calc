@@ -10,18 +10,60 @@ html {
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 3rem;
 }
 
 .wrapper {
-  width: 400px;
+  margin: auto;
+  width: 43%;
   background-color: black;
   color: white;
 }
 
+.calc-button-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
 .screen {
   text-align: right;
-  font-family: cursive;
   padding: 20px 5px;
   font-size: 40px;
+}
+
+.calc-button {
+  background-color: #d8d9db;
+  color: black;
+  border: none;
+  font-size: 40px;
+  height: 100px;
+  flex-basis: 24.6%;
+  cursor: pointer;
+}
+
+.calc-button:hover {
+  background-color: #ebebeb;
+}
+
+.calc-button:active {
+  background-color: #bbbcbe;
+}
+
+.double {
+  flex-basis: 49.7%;
+}
+
+.triple {
+  flex-basis: 74.8%;
+}
+
+.calc-button:last-child {
+  background-color: #df974c;
+  color: white;
+}
+
+.calc-button:last-child:hover {
+  background-color: #dfb07e;
 }
